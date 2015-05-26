@@ -74,10 +74,11 @@ namespace air_craft
             
             //---------------------------------------------------------------------
             
-            inline void reset(void)
+            /** Specify a value for reseting to a non-zero value */
+            inline void reset(float_t value = 0)
             {
                 _prevTimestamp = -1;
-                _value = 0;
+                _value = value;
             }
 
             
